@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentSingIn">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="421dp"
+        android:layout_height="316dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_bg" />
+
+
+    <EditText
+        android:id="@+id/txtEmail_INstd"
+        android:layout_width="307dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:textSize="18sp"
+        android:textColorHint="@color/browser_actions_title_color"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Password"
+        android:layout_width="318dp"
+        android:layout_height="80dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:errorEnabled="true"
+        app:helperText="Requeried"
+        app:hintTextColor="@color/browser_actions_bg_grey"
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toTopOf="@+id/SingINStudent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail_INstd"
+        app:layout_constraintVertical_bias="0.22"
+        app:passwordToggleEnabled="true"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/txtPassword_InStd"
+            android:layout_width="307dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:textColorHint="@color/browser_actions_title_color"
+            android:background="@drawable/blue_border_rounded_cornwe"
+            android:ems="10"
+            android:textSize="18sp"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:paddingStart="12dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="162dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254"
+        app:srcCompat="@drawable/imglogo" />
+
+
+    <TextView
+        android:id="@+id/SingINStudent"
+        android:layout_width="307dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="136dp"
+        android:background="@drawable/blue_fill__rounded_color"
+        android:paddingStart="120dp"
+        android:paddingTop="8dp"
+        android:text="Sing In"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/GoToSingUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="97dp"
+        android:layout_marginBottom="32dp"
+        android:text="Dont Have An Account ? Sing Up Now"
+        android:textColor="#1566e0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SingINStudent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
